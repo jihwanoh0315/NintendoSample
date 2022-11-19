@@ -12,7 +12,10 @@
       <UniqueIdentifier>{6fa7b939-61b5-32ff-92fa-7930b39b923b}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source Files\Circle">
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{98854bd7-f0ac-4862-b098-27196e18ac59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects">
       <UniqueIdentifier>{7e8c96f9-a746-4b12-bb3f-9a0085cb272e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,7 +27,13 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Circle.cpp">
-      <Filter>Source Files\Circle</Filter>
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -33,7 +42,13 @@
   <ItemGroup>
     <ClInclude Include="NpadController.h" />
     <ClInclude Include="Circle.h">
-      <Filter>Source Files\Circle</Filter>
+      <Filter>Source Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Source Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\Player</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

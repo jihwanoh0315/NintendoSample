@@ -432,18 +432,13 @@ namespace {
         nn::hid::SetSupportedNpadIdType(g_NpadIds, NpadIdCountMax);
 
 
-        /// <summary>
-        /// imgui simple
-        /// </summary>
         nn::hid::InitializeDebugPad();
         nn::hid::InitializeKeyboard();
         nn::hid::InitializeMouse();
-
     }
 
     void Update()
     {
-
         for (int i = 0; i < NpadIdCountMax; i++)
         {
             // Get the currently enabled style of operation (NpadStyleSet).
