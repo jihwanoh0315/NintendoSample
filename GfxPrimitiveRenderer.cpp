@@ -120,9 +120,6 @@
 #include <nn/nn_Macro.h>
 #include <nn/os/os_Thread.h>
 #include <nn/os/os_SystemEvent.h>
-#include <nn/hid.h>
-#include <nn/hid/hid_Npad.h>
-#include <nn/hid/hid_NpadJoy.h>
 
 #include <vector>
 
