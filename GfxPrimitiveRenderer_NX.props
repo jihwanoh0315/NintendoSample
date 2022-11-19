@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GlslcName>NvnGlslc.dll</GlslcName>
+    <GlslcName Condition="'$(Platform)'=='Win32'">NvnGlslc32.dll</GlslcName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <PostBuildEvent>
+      <Command>
+      if exist $(NintendoSdkRoot)\Tools\Graphics\NvnTools\$(GlslcName) (
+        copy $(NintendoSdkRoot)\Tools\Graphics\NvnTools\$(GlslcName) $(TargetDir)
+      ) else (
+        copy $(NintendoSdkRoot)\Externals\nvn2\Tools\ShaderCompiler\$(GlslcName) $(TargetDir)
+      )
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

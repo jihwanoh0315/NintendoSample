@@ -1,0 +1,73 @@
+﻿// SoundIDs
+static const unsigned int STRM_MARIOKART = 0x01000000;
+static const unsigned int STRM_MULTITRACK = 0x01000001;
+static const unsigned int STRM_MARIOKART_PCM16 = 0x01000002;
+static const unsigned int STRM_MARIOKART_OPUS = 0x01000003;
+static const unsigned int STRM_MARIOKART_PREFETCH = 0x01000004;
+static const unsigned int STRM_MARIOKART_STREAMJUMP = 0x01000005;
+static const unsigned int SE_YOSHI = 0x01000006;
+static const unsigned int SE_WIHAHO = 0x01000007;
+static const unsigned int SE_YOSHI_PCM16 = 0x01000008;
+static const unsigned int WSD_HIHAT_CLOSE = 0x01000009;
+static const unsigned int WSD_HIHAT_CLOSE_REMOTE_FILTER = 0x0100000A;
+static const unsigned int WSD_SNARE = 0x0100000B;
+static const unsigned int SE_YOSHI_PLAYERHEAP = 0x0100000C;
+static const unsigned int SE_IDLE = 0x0100000D;
+static const unsigned int SE_IDLE_FILTER = 0x0100000E;
+static const unsigned int SE_IDLE_DOPPLER_FILTER = 0x0100000F;
+static const unsigned int SE_IDLE_DOPPLER = 0x01000010;
+static const unsigned int SE_IDLE_NOVOLUME = 0x01000011;
+static const unsigned int SE_YOSHI_FOR_EMBEDDEDGROUP = 0x01000012;
+static const unsigned int SE_YOSHI_FOR_LINKEDGROUP = 0x01000013;
+static const unsigned int SEQ_MARIOKART = 0x01000014;
+static const unsigned int SEQ_MARIOKART_PLAYERHEAP = 0x01000015;
+static const unsigned int SEQ_TEST = 0x01000016;
+static const unsigned int SEQ_COIN = 0x01000017;
+static const unsigned int SEQ_JUMP = 0x01000018;
+static const unsigned int SEQ_LOOP = 0x01000019;
+static const unsigned int SEQ_CALL = 0x0100001A;
+static const unsigned int SEQ_PORTA = 0x0100001B;
+static const unsigned int SEQ_PORTA_TIME = 0x0100001C;
+static const unsigned int SEQ_SWEEP = 0x0100001D;
+static const unsigned int SEQ_MOD = 0x0100001E;
+static const unsigned int SEQ_TIE = 0x0100001F;
+static const unsigned int SEQ_MOVE_VOLUME = 0x01000020;
+static const unsigned int SEQ_SUPER_MARIO = 0x01000021;
+static const unsigned int SEQ_OPENTRACK = 0x01000022;
+static const unsigned int SEQ_BANK_SELECT = 0x01000023;
+static const unsigned int SEQ_FILTER = 0x01000024;
+
+// SoundGroupIDs
+// WaveSoundSetIDs
+static const unsigned int WSDSET_VOICE = 0x02000000;
+static const unsigned int WSDSET_DRUM = 0x02000001;
+static const unsigned int WSDSET_PLAYERHEAP = 0x02000002;
+static const unsigned int WSDSET_3D = 0x02000003;
+static const unsigned int WSDSET_FOR_EMBEDDED_GROUP = 0x02000004;
+static const unsigned int WSDSET_FOR_LINKEDGROUP = 0x02000005;
+// SequenceSoundSetIDs
+static const unsigned int SEQSET_SE = 0x02000006;
+
+// BankIDs
+static const unsigned int BANK_SE = 0x03000000;
+static const unsigned int BANK_SE2 = 0x03000001;
+static const unsigned int BANK_BGM = 0x03000002;
+static const unsigned int BANK_TEST = 0x03000003;
+
+// PlayerIDs
+static const unsigned int PLAYER_DEFAULT = 0x04000000;
+static const unsigned int PLAYER_WITH_HEAP = 0x04000001;
+
+// WaveArchiveIDs
+static const unsigned int WARC_BANK_BGM = 0x05000000;
+static const unsigned int WARC_WSD_PLAYERHEAP = 0x05000001;
+static const unsigned int WARC_BANK_TEST = 0x05000002;
+static const unsigned int WARC_SAMPLE = 0x05000003;
+
+// GroupIDs
+static const unsigned int GROUP_USER = 0x06000000;
+static const unsigned int GROUP_USER_INDIVIDUAL_WARC = 0x06000001;
+static const unsigned int GROUP_USER_AUTO_WARC = 0x06000002;
+static const unsigned int GROUP_ALL = 0x06000003;
+static const unsigned int GROUP_EMBEDDED = 0x06000004;
+static const unsigned int GROUP_LINKED = 0x06000005;

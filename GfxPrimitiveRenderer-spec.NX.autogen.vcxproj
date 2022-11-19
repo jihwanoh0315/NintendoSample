@@ -1,0 +1,1984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="NX_Debug|NX32">
+      <Configuration>NX_Debug</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Debug|NX64">
+      <Configuration>NX_Debug</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Debug|Win32">
+      <Configuration>NX_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Debug|x64">
+      <Configuration>NX_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Develop|NX32">
+      <Configuration>NX_Develop</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Develop|NX64">
+      <Configuration>NX_Develop</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Develop|Win32">
+      <Configuration>NX_Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Develop|x64">
+      <Configuration>NX_Develop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Release|NX32">
+      <Configuration>NX_Release</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Release|NX64">
+      <Configuration>NX_Release</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Release|Win32">
+      <Configuration>NX_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_Release|x64">
+      <Configuration>NX_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Debug|NX32">
+      <Configuration>NX_VS2017_Debug</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Debug|NX64">
+      <Configuration>NX_VS2017_Debug</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Debug|Win32">
+      <Configuration>NX_VS2017_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Debug|x64">
+      <Configuration>NX_VS2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Develop|NX32">
+      <Configuration>NX_VS2017_Develop</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Develop|NX64">
+      <Configuration>NX_VS2017_Develop</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Develop|Win32">
+      <Configuration>NX_VS2017_Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Develop|x64">
+      <Configuration>NX_VS2017_Develop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Release|NX32">
+      <Configuration>NX_VS2017_Release</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Release|NX64">
+      <Configuration>NX_VS2017_Release</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Release|Win32">
+      <Configuration>NX_VS2017_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2017_Release|x64">
+      <Configuration>NX_VS2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Debug|NX32">
+      <Configuration>NX_VS2019_Debug</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Debug|NX64">
+      <Configuration>NX_VS2019_Debug</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Debug|Win32">
+      <Configuration>NX_VS2019_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Debug|x64">
+      <Configuration>NX_VS2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Develop|NX32">
+      <Configuration>NX_VS2019_Develop</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Develop|NX64">
+      <Configuration>NX_VS2019_Develop</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Develop|Win32">
+      <Configuration>NX_VS2019_Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Develop|x64">
+      <Configuration>NX_VS2019_Develop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Release|NX32">
+      <Configuration>NX_VS2019_Release</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Release|NX64">
+      <Configuration>NX_VS2019_Release</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Release|Win32">
+      <Configuration>NX_VS2019_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="NX_VS2019_Release|x64">
+      <Configuration>NX_VS2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E26EF7FA-09F2-47D6-93FF-BD6840EA0DF8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nn</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NintendoSdkPropertySheetCategory>NX</NintendoSdkPropertySheetCategory>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <_NintendoSdkIsAutoGeneratedProject>true</_NintendoSdkIsAutoGeneratedProject>
+    <_NintendoSdkSubRootName>Samples</_NintendoSdkSubRootName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <_NintendoSdkDeliverable>Application</_NintendoSdkDeliverable>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkProgramKind>Application</_NintendoSdkProgramKind>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Develop|NX32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <_NintendoSdkDeliverable>Application</_NintendoSdkDeliverable>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkProgramKind>Application</_NintendoSdkProgramKind>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <_NintendoSdkDeliverable>Application</_NintendoSdkDeliverable>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkProgramKind>Application</_NintendoSdkProgramKind>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|NX32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|NX32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|NX32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|NX32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|NX32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|NX32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <_NintendoSdkDeliverable>Application</_NintendoSdkDeliverable>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkProgramKind>Application</_NintendoSdkProgramKind>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Develop|NX64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <_NintendoSdkDeliverable>Application</_NintendoSdkDeliverable>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkProgramKind>Application</_NintendoSdkProgramKind>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <_NintendoSdkDeliverable>Application</_NintendoSdkDeliverable>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkProgramKind>Application</_NintendoSdkProgramKind>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|NX64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|NX64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|NX64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|NX64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|NX64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|NX64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Debug|Win32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Develop|Win32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Release|Win32'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <VCToolsRedistVersion>14.27.29016</VCToolsRedistVersion>
+    <VCToolsVersion>14.27.29110</VCToolsVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <VCToolsRedistVersion>14.27.29016</VCToolsRedistVersion>
+    <VCToolsVersion>14.27.29110</VCToolsVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <VCToolsRedistVersion>14.27.29016</VCToolsRedistVersion>
+    <VCToolsVersion>14.27.29110</VCToolsVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Debug|x64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Develop|x64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_Release|x64'" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <VCToolsRedistVersion>14.27.29016</VCToolsRedistVersion>
+    <VCToolsVersion>14.27.29110</VCToolsVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <VCToolsRedistVersion>14.27.29016</VCToolsRedistVersion>
+    <VCToolsVersion>14.27.29110</VCToolsVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <TargetName>GfxPrimitiveRenderer</TargetName>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+    <NintendoSdkProgramCategory>Applications</NintendoSdkProgramCategory>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <VCToolsRedistVersion>14.27.29016</VCToolsRedistVersion>
+    <VCToolsVersion>14.27.29110</VCToolsVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <_NintendoSdkIsSupportedProjectConfiguration>true</_NintendoSdkIsSupportedProjectConfiguration>
+    <_NintendoSdkUsePackageRootAsBaseOutputPath>false</_NintendoSdkUsePackageRootAsBaseOutputPath>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(NintendoSdkRoot)\Build\MSBuild\NintendoSdkAutogenVcProjectExtensionSettings.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Develop|NX32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|NX32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|NX32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|NX32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|NX32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|NX32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|NX32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Develop|NX64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|NX64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|NX64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|NX64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|NX64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|NX64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|NX64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Debug|Win32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Develop|Win32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Release|Win32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|Win32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|Win32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|Win32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|Win32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|Win32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|Win32'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Debug|x64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Develop|x64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_Release|x64'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|x64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|x64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|x64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|x64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|x64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|x64'">
+    <Import Project="GfxPrimitiveRenderer.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX32'">
+    <ApplicationDataDir>$(NintendoSdkContentDirectory)</ApplicationDataDir>
+    <CppLanguageStandard>Gnu++14</CppLanguageStandard>
+    <LinkTimeOptimization>None</LinkTimeOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Develop|NX32'">
+    <ApplicationDataDir>$(NintendoSdkContentDirectory)</ApplicationDataDir>
+    <CppLanguageStandard>Gnu++14</CppLanguageStandard>
+    <LinkTimeOptimization>None</LinkTimeOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX32'">
+    <ApplicationDataDir>$(NintendoSdkContentDirectory)</ApplicationDataDir>
+    <CppLanguageStandard>Gnu++14</CppLanguageStandard>
+    <LinkTimeOptimization>None</LinkTimeOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX64'">
+    <ApplicationDataDir>$(NintendoSdkContentDirectory)</ApplicationDataDir>
+    <CppLanguageStandard>Gnu++14</CppLanguageStandard>
+    <LinkTimeOptimization>None</LinkTimeOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Develop|NX64'">
+    <ApplicationDataDir>$(NintendoSdkContentDirectory)</ApplicationDataDir>
+    <CppLanguageStandard>Gnu++14</CppLanguageStandard>
+    <LinkTimeOptimization>None</LinkTimeOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX64'">
+    <ApplicationDataDir>$(NintendoSdkContentDirectory)</ApplicationDataDir>
+    <CppLanguageStandard>Gnu++14</CppLanguageStandard>
+    <LinkTimeOptimization>None</LinkTimeOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|Win32'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|x64'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|x64'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|x64'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|x64'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|x64'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|x64'">
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX32'">
+    <ClCompile>
+      <Vectorization>false</Vectorization>
+      <ImplicitFloat>false</ImplicitFloat>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>O0</OptimizationLevel>
+      <NoBuiltIn>true</NoBuiltIn>
+      <OmitFramePointer>false</OmitFramePointer>
+      <Warnings>AllWarnings</Warnings>
+      <CPPExceptions>false</CPPExceptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>%(AdditionalOptions) -Werror=return-type -Wstrict-aliasing -Wover-aligned -Wimplicit-fallthrough</AdditionalOptions>
+      <StackProtector>None</StackProtector>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Inlinefunctions>true</Inlinefunctions>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(NintendoSdkRoot)Resources\SpecFiles\Application.arm.ilp32.ldscript</LinkerScript>
+      <BuildIdentifierGeneration>BuildIdentifierSHA1</BuildIdentifierGeneration>
+      <LinkTimeOptimization>None</LinkTimeOptimization>
+      <AdditionalOptions>-nostartfiles -Wl,--gc-sections -Wl,--target2=got-rel -Wl,-init=_init -Wl,-fini=_fini -Wl,-pie -Wl,-z,combreloc -Wl,-z,relro -Wl,--enable-new-dtags -mcpu=cortex-a57 -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mabi=aapcs-linux %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>rocrt.o;nnApplication.o;libnn_init_memory.a;libnn_gll.a;libnn_gfx.a;libnn_mii_draw.a;libnn_gfxUtil.a;libnns_gfx.a;libnn_perf.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UseUnifiedLinkCommandLineGenerator>true</UseUnifiedLinkCommandLineGenerator>
+      <AdditionalNSODependencies>glslc.nso;glslc.nso;%(AdditionalNSODependencies)</AdditionalNSODependencies>
+      <LinkerType>LLDLinker</LinkerType>
+      <ExportDynamic>true</ExportDynamic>
+      <EnableDeadStrip>false</EnableDeadStrip>
+      <FinalizeDescSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.desc</FinalizeDescSource>
+      <FinalizeMetaSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.arm.ilp32.nmeta</FinalizeMetaSource>
+      <ContentMetaType>Application</ContentMetaType>
+      <ProcessType>$(_NintendoSdkProgramKind)</ProcessType>
+      <SdkCrtEndName>crtend.o</SdkCrtEndName>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Develop|NX32'">
+    <ClCompile>
+      <Vectorization>false</Vectorization>
+      <ImplicitFloat>false</ImplicitFloat>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>O3</OptimizationLevel>
+      <OmitFramePointer>false</OmitFramePointer>
+      <Warnings>AllWarnings</Warnings>
+      <CPPExceptions>false</CPPExceptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>%(AdditionalOptions) -Werror=return-type -Wstrict-aliasing -Wover-aligned -Wimplicit-fallthrough</AdditionalOptions>
+      <StackProtector>None</StackProtector>
+      <NoBuiltIn>false</NoBuiltIn>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Inlinefunctions>true</Inlinefunctions>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEVELOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(NintendoSdkRoot)Resources\SpecFiles\Application.arm.ilp32.ldscript</LinkerScript>
+      <BuildIdentifierGeneration>BuildIdentifierSHA1</BuildIdentifierGeneration>
+      <LinkTimeOptimization>None</LinkTimeOptimization>
+      <AdditionalOptions>-nostartfiles -Wl,--gc-sections -Wl,--target2=got-rel -Wl,-init=_init -Wl,-fini=_fini -Wl,-pie -Wl,-z,combreloc -Wl,-z,relro -Wl,--enable-new-dtags -mcpu=cortex-a57 -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mabi=aapcs-linux %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>rocrt.o;nnApplication.o;libnn_init_memory.a;libnn_gll.a;libnn_gfx.a;libnn_mii_draw.a;libnn_gfxUtil.a;libnns_gfx.a;libnn_perf.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UseUnifiedLinkCommandLineGenerator>true</UseUnifiedLinkCommandLineGenerator>
+      <AdditionalNSODependencies>glslc.nso;glslc.nso;%(AdditionalNSODependencies)</AdditionalNSODependencies>
+      <LinkerType>LLDLinker</LinkerType>
+      <ExportDynamic>true</ExportDynamic>
+      <EnableDeadStrip>false</EnableDeadStrip>
+      <FinalizeDescSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.desc</FinalizeDescSource>
+      <FinalizeMetaSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.arm.ilp32.nmeta</FinalizeMetaSource>
+      <ContentMetaType>Application</ContentMetaType>
+      <ProcessType>$(_NintendoSdkProgramKind)</ProcessType>
+      <SdkCrtEndName>crtend.o</SdkCrtEndName>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX32'">
+    <ClCompile>
+      <Vectorization>false</Vectorization>
+      <ImplicitFloat>false</ImplicitFloat>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>O3</OptimizationLevel>
+      <OmitFramePointer>false</OmitFramePointer>
+      <Warnings>AllWarnings</Warnings>
+      <CPPExceptions>false</CPPExceptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>%(AdditionalOptions) -Werror=return-type -Wstrict-aliasing -Wover-aligned -Wimplicit-fallthrough</AdditionalOptions>
+      <StackProtector>None</StackProtector>
+      <NoBuiltIn>false</NoBuiltIn>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Inlinefunctions>true</Inlinefunctions>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_DISABLE_ASSERT;NN_DISABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_RELEASE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(NintendoSdkRoot)Resources\SpecFiles\Application.arm.ilp32.ldscript</LinkerScript>
+      <BuildIdentifierGeneration>BuildIdentifierSHA1</BuildIdentifierGeneration>
+      <LinkTimeOptimization>None</LinkTimeOptimization>
+      <AdditionalOptions>-nostartfiles -Wl,--gc-sections -Wl,--target2=got-rel -Wl,-init=_init -Wl,-fini=_fini -Wl,-pie -Wl,-z,combreloc -Wl,-z,relro -Wl,--enable-new-dtags -mcpu=cortex-a57 -mfpu=crypto-neon-fp-armv8 -mfloat-abi=hard -mabi=aapcs-linux %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>rocrt.o;nnApplication.o;libnn_init_memory.a;libnn_gll.a;libnn_gfx.a;libnn_mii_draw.a;libnn_gfxUtil.a;libnns_gfx.a;libnn_perf.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UseUnifiedLinkCommandLineGenerator>true</UseUnifiedLinkCommandLineGenerator>
+      <AdditionalNSODependencies>glslc.nso;glslc.nso;%(AdditionalNSODependencies)</AdditionalNSODependencies>
+      <LinkerType>LLDLinker</LinkerType>
+      <ExportDynamic>true</ExportDynamic>
+      <EnableDeadStrip>false</EnableDeadStrip>
+      <FinalizeDescSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.desc</FinalizeDescSource>
+      <FinalizeMetaSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.arm.ilp32.nmeta</FinalizeMetaSource>
+      <ContentMetaType>Application</ContentMetaType>
+      <ProcessType>$(_NintendoSdkProgramKind)</ProcessType>
+      <SdkCrtEndName>crtend.o</SdkCrtEndName>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX64'">
+    <ClCompile>
+      <Vectorization>false</Vectorization>
+      <ImplicitFloat>false</ImplicitFloat>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>O0</OptimizationLevel>
+      <NoBuiltIn>true</NoBuiltIn>
+      <OmitFramePointer>false</OmitFramePointer>
+      <Warnings>AllWarnings</Warnings>
+      <CPPExceptions>false</CPPExceptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>%(AdditionalOptions) -Werror=return-type -Wstrict-aliasing -Wover-aligned -Wimplicit-fallthrough</AdditionalOptions>
+      <StackProtector>None</StackProtector>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Inlinefunctions>true</Inlinefunctions>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(NintendoSdkRoot)Resources\SpecFiles\Application.aarch64.lp64.ldscript</LinkerScript>
+      <BuildIdentifierGeneration>BuildIdentifierSHA1</BuildIdentifierGeneration>
+      <LinkTimeOptimization>None</LinkTimeOptimization>
+      <AdditionalOptions>-nostartfiles -Wl,--gc-sections -Wl,-init=_init -Wl,-fini=_fini -Wl,-pie -Wl,-z,combreloc -Wl,-z,relro -Wl,--enable-new-dtags -mcpu=cortex-a57+fp+simd+crypto+crc %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>rocrt.o;nnApplication.o;libnn_init_memory.a;libnn_gll.a;libnn_gfx.a;libnn_mii_draw.a;libnn_gfxUtil.a;libnns_gfx.a;libnn_perf.a;libnns_dbgui.a;libnns_dbguiGfwInterop.a;libnns_imgui.a;libnn_atk.a;libnn_ige.a;libnns_atk.a;libglew.a;libnns_gfxLog.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);$(NintendoSdkRoot)Tools\Graphics\NvnLoader;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UseUnifiedLinkCommandLineGenerator>true</UseUnifiedLinkCommandLineGenerator>
+      <AdditionalNSODependencies>glslc.nso;glslc.nso;%(AdditionalNSODependencies)</AdditionalNSODependencies>
+      <LinkerType>LLDLinker</LinkerType>
+      <ExportDynamic>true</ExportDynamic>
+      <EnableDeadStrip>false</EnableDeadStrip>
+      <FinalizeDescSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.desc</FinalizeDescSource>
+      <FinalizeMetaSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.aarch64.lp64.nmeta</FinalizeMetaSource>
+      <ContentMetaType>Application</ContentMetaType>
+      <ProcessType>$(_NintendoSdkProgramKind)</ProcessType>
+      <SdkCrtEndName>crtend.o</SdkCrtEndName>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Develop|NX64'">
+    <ClCompile>
+      <Vectorization>false</Vectorization>
+      <ImplicitFloat>false</ImplicitFloat>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>O3</OptimizationLevel>
+      <OmitFramePointer>false</OmitFramePointer>
+      <Warnings>AllWarnings</Warnings>
+      <CPPExceptions>false</CPPExceptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>%(AdditionalOptions) -Werror=return-type -Wstrict-aliasing -Wover-aligned -Wimplicit-fallthrough</AdditionalOptions>
+      <StackProtector>None</StackProtector>
+      <NoBuiltIn>false</NoBuiltIn>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Inlinefunctions>true</Inlinefunctions>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEVELOP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(NintendoSdkRoot)Resources\SpecFiles\Application.aarch64.lp64.ldscript</LinkerScript>
+      <BuildIdentifierGeneration>BuildIdentifierSHA1</BuildIdentifierGeneration>
+      <LinkTimeOptimization>None</LinkTimeOptimization>
+      <AdditionalOptions>-nostartfiles -Wl,--gc-sections -Wl,-init=_init -Wl,-fini=_fini -Wl,-pie -Wl,-z,combreloc -Wl,-z,relro -Wl,--enable-new-dtags -mcpu=cortex-a57+fp+simd+crypto+crc %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>rocrt.o;nnApplication.o;libnn_init_memory.a;libnn_gll.a;libnn_gfx.a;libnn_mii_draw.a;libnn_gfxUtil.a;libnns_gfx.a;libnn_perf.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UseUnifiedLinkCommandLineGenerator>true</UseUnifiedLinkCommandLineGenerator>
+      <AdditionalNSODependencies>glslc.nso;glslc.nso;%(AdditionalNSODependencies)</AdditionalNSODependencies>
+      <LinkerType>LLDLinker</LinkerType>
+      <ExportDynamic>true</ExportDynamic>
+      <EnableDeadStrip>false</EnableDeadStrip>
+      <FinalizeDescSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.desc</FinalizeDescSource>
+      <FinalizeMetaSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.aarch64.lp64.nmeta</FinalizeMetaSource>
+      <ContentMetaType>Application</ContentMetaType>
+      <ProcessType>$(_NintendoSdkProgramKind)</ProcessType>
+      <SdkCrtEndName>crtend.o</SdkCrtEndName>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX64'">
+    <ClCompile>
+      <Vectorization>false</Vectorization>
+      <ImplicitFloat>false</ImplicitFloat>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizationLevel>O3</OptimizationLevel>
+      <OmitFramePointer>false</OmitFramePointer>
+      <Warnings>AllWarnings</Warnings>
+      <CPPExceptions>false</CPPExceptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>%(AdditionalOptions) -Werror=return-type -Wstrict-aliasing -Wover-aligned -Wimplicit-fallthrough</AdditionalOptions>
+      <StackProtector>None</StackProtector>
+      <NoBuiltIn>false</NoBuiltIn>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Inlinefunctions>true</Inlinefunctions>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_DISABLE_ASSERT;NN_DISABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_RELEASE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <LinkerScript>$(NintendoSdkRoot)Resources\SpecFiles\Application.aarch64.lp64.ldscript</LinkerScript>
+      <BuildIdentifierGeneration>BuildIdentifierSHA1</BuildIdentifierGeneration>
+      <LinkTimeOptimization>None</LinkTimeOptimization>
+      <AdditionalOptions>-nostartfiles -Wl,--gc-sections -Wl,-init=_init -Wl,-fini=_fini -Wl,-pie -Wl,-z,combreloc -Wl,-z,relro -Wl,--enable-new-dtags -mcpu=cortex-a57+fp+simd+crypto+crc %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>rocrt.o;nnApplication.o;libnn_init_memory.a;libnn_gll.a;libnn_gfx.a;libnn_mii_draw.a;libnn_gfxUtil.a;libnns_gfx.a;libnn_perf.a;libnns_dbgui.a;libnns_dbguiGfwInterop.a;libnns_imgui.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);$(NintendoSdkRoot)Tools\Graphics\NvnLoader;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UseUnifiedLinkCommandLineGenerator>true</UseUnifiedLinkCommandLineGenerator>
+      <AdditionalNSODependencies>glslc.nso;glslc.nso;%(AdditionalNSODependencies)</AdditionalNSODependencies>
+      <LinkerType>LLDLinker</LinkerType>
+      <ExportDynamic>true</ExportDynamic>
+      <EnableDeadStrip>false</EnableDeadStrip>
+      <FinalizeDescSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.desc</FinalizeDescSource>
+      <FinalizeMetaSource>$(NintendoSdkRoot)Resources\SpecFiles\Application.aarch64.lp64.nmeta</FinalizeMetaSource>
+      <ContentMetaType>Application</ContentMetaType>
+      <ProcessType>$(_NintendoSdkProgramKind)</ProcessType>
+      <SdkCrtEndName>crtend.o</SdkCrtEndName>
+    </Link>
+    <PreBuildEvent>
+      <Command>if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|Win32'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnablePREfast>false</EnablePREfast>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEBUG;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn32.dll" "$(OutDir)\nvn32.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|Win32'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnablePREfast>false</EnablePREfast>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEVELOP;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn32.dll" "$(OutDir)\nvn32.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|Win32'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnablePREfast>false</EnablePREfast>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_DISABLE_ASSERT;NN_DISABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_RELEASE;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn32.dll" "$(OutDir)\nvn32.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|Win32'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnablePREfast>false</EnablePREfast>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEBUG;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn32.dll" "$(OutDir)\nvn32.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|Win32'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnablePREfast>false</EnablePREfast>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEVELOP;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn32.dll" "$(OutDir)\nvn32.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|Win32'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnablePREfast>false</EnablePREfast>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_DISABLE_ASSERT;NN_DISABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_RELEASE;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter32.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn32.dll" "$(OutDir)\nvn32.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|x64'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEBUG;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" "$(OutDir)\nvn.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|x64'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEVELOP;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" "$(OutDir)\nvn.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|x64'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_DISABLE_ASSERT;NN_DISABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_RELEASE;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" "$(OutDir)\nvn.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|x64'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEBUG;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" "$(OutDir)\nvn.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|x64'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_ENABLE_ASSERT;NN_ENABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_DEVELOP;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" "$(OutDir)\nvn.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|x64'">
+    <ClCompile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ErrorReporting>Queue</ErrorReporting>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <CallingConvention>Cdecl</CallingConvention>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj /w44668 /wd4324 /wd4512 /wd4668</AdditionalOptions>
+      <CompileAsManaged>false</CompileAsManaged>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AdditionalIncludeDirectories>$(NintendoSdkIncludePath);%(AdditionalIncludeDirectories);$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NN_ENABLE_LOG;NN_DISABLE_ASSERT;NN_DISABLE_ABORT_MESSAGE;NN_NINTENDO_SDK;NN_SDK_BUILD_RELEASE;WIN32;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkErrorReporting>QueueForNextLogin</LinkErrorReporting>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <TypeLibraryResourceID>1</TypeLibraryResourceID>
+      <EnableUAC>true</EnableUAC>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ManifestEmbed>true</ManifestEmbed>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ShowProgress>NotSet</ShowProgress>
+      <Driver>NotSet</Driver>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <CLRImageType>Default</CLRImageType>
+      <AdditionalDependencies>libnn_gll.lib;libnn_gfx.lib;libnn_mii_draw.lib;OpenGL32.lib;libnn_gfxUtil.lib;libnns_gfx.lib;libnn_perf.lib;libnnSdk.lib;libnn_gfx.lib;hid.lib;iphlpapi.lib;Rpcrt4.lib;setupapi.lib;shlwapi.lib;winmm.lib;wlanapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NintendoSdkLibraryPath);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>set APPLICATION_DATA_DIRECTORY="$(NintendoSdkContentDirectory)"
+(if exist "$(OutDir)data" rmdir /S /Q "$(OutDir)data") &amp; mklink /j "$(OutDir)data" %APPLICATION_DATA_DIRECTORY%
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\TextureConverter.exe $(ProjectDir)Resources\Check_BG_01.dds $(ProjectDir)Resources\Check_Text_01.dds -o $(NintendoSdkContentDirectory)\Check.bntx --tile-mode NX --gpu-encoding auto
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\MosaicPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\MosaicPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(NintendoSdkContentDirectory)" mkdir "$(NintendoSdkContentDirectory)"
+$(NintendoSdkRoot)Tools\Graphics\GraphicsTools\ShaderConverter.exe -o $(NintendoSdkContentDirectory)\ShadingTexPixelShader.bnsh -s Glsl -c Binary_Ir -a Nvn --silent --pixel-shader $(ProjectDir)Resources\ShadingTexPixelShader.glsl --glsl-version 450 --separable --reflection
+
+if not exist "$(OutDir)" mkdir "$(OutDir)"
+copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" "$(OutDir)\nvn.dll"
+%(Command)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Develop|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Develop|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NX_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>;$(NintendoSdkIncludePath);$(NintendoSdkRoot)Externals\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="GfxPrimitiveRenderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|NX32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|NX32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|NX32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|NX32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|NX32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|NX32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Debug|NX64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Develop|NX64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2017_Release|NX64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Debug|NX64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Develop|NX64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|NX64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_Develop|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_Develop|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="NpadController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common.fsid" />
+    <None Include="Resources\MosaicPixelShader.glsl" />
+    <None Include="Resources\ShadingPixelShader.glsl" />
+    <None Include="Resources\ShadingTexPixelShader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Include="$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" />
+    <UpToDateCheckInput Include="$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn32.dll" />
+    <UpToDateCheckInput Include="$(ProjectDir)Resources\Check_BG_01.dds" />
+    <UpToDateCheckInput Include="$(ProjectDir)Resources\Check_Text_01.dds" />
+    <UpToDateCheckInput Include="$(ProjectDir)Resources\MosaicPixelShader.glsl" />
+    <UpToDateCheckInput Include="$(ProjectDir)Resources\ShadingPixelShader.glsl" />
+    <UpToDateCheckInput Include="$(ProjectDir)Resources\ShadingTexPixelShader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="NpadController.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <ImportDirectoryBuildTargets>false</ImportDirectoryBuildTargets>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(NintendoSdkRoot)\Build\MSBuild\NintendoSdkAutogenVcProjectExtensionTargets.targets" />
+  </ImportGroup>
+</Project>
