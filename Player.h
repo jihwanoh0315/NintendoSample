@@ -3,6 +3,7 @@ class Player
 {
 public:
 	Player();
+	Player(float x_, float y_);
 	~Player();
 
 
