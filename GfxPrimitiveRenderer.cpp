@@ -80,6 +80,7 @@
  *
  */
 
+// This comment should go away
 
 #include <cstdlib>
 #include <cstring>
