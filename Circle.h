@@ -8,6 +8,7 @@ public:
 	~Circle();
 
 	bool Collide(Circle other_);
+	bool inCircle(float x_, float y_);
 
 	float x;
 	float y;
