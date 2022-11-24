@@ -35,6 +35,9 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\Player</Filter>
     </ClCompile>
+    <ClCompile Include="Objects.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Common.fsid" />
@@ -49,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Source Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects.h">
+      <Filter>Source Files\Objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

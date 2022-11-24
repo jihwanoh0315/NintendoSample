@@ -16,6 +16,10 @@ Player::~Player()
 {
 }
 
+void Player::Update()
+{
+}
+
 void Player::Translate(float x_, float y_)
 {
 	x += x_;

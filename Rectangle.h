@@ -1,10 +1,13 @@
 #pragma once
-class Rectangle
+#include "Objects.h"
+class Rectangle : public Objects
 {
 public:
 	Rectangle();
 	~Rectangle();
 	Rectangle(float x1_,float y1_, float x2_, float y2_);
+
+	void Update();
 
 	bool inRect(float x_, float y_);
 

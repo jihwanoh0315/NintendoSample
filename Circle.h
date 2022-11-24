@@ -1,6 +1,7 @@
 #pragma once
+#include "Objects.h"
 
-class Circle
+class Circle : public Objects
 {
 public:
 	Circle();
@@ -9,6 +10,7 @@ public:
 
 	bool Collide(Circle other_);
 	bool inCircle(float x_, float y_);
+	void Update();
 
 	float x;
 	float y;

@@ -12,6 +12,10 @@ Rectangle::Rectangle(float x1_, float y1_, float x2_, float y2_) : x1(x1_), y1(y
 {
 }
 
+void Rectangle::Update()
+{
+}
+
 bool Rectangle::inRect(float x_, float y_)
 {
 	if (x1 < x_ && x_ < x2

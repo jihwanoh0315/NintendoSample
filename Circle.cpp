@@ -39,3 +39,7 @@ bool Circle::inCircle(float x_, float y_)
 
 	return false;
 }
+
+void Circle::Update()
+{
+}

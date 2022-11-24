@@ -1954,6 +1954,7 @@ copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" "$(OutDir)\nvn.dll"
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='NX_Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="NpadController.cpp" />
+    <ClCompile Include="Objects.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Rectangle.cpp" />
   </ItemGroup>
@@ -1974,6 +1975,7 @@ copy /Y "$(NintendoSdkRoot)Tools\Graphics\NvnLoader\nvn.dll" "$(OutDir)\nvn.dll"
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="Objects.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="NpadController.h" />
     <ClInclude Include="Rectangle.h" />
