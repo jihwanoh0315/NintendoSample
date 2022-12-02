@@ -1,5 +1,6 @@
 #include "Circle.h"
 
+
 Circle::Circle() : x(0), y(0), r(0)
 {
 }
@@ -42,4 +43,21 @@ bool Circle::inCircle(float x_, float y_)
 
 void Circle::Update()
 {
+}
+
+void Circle::Translate(float x_, float y_)
+{
+	x += x_;
+	y += y_;
+}
+
+
+void Circle::RenderInit()
+{
+
+}
+
+void Circle::Render()
+{
+
 }

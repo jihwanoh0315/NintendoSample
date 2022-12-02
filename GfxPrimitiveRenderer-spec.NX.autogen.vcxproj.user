@@ -3,7 +3,7 @@
   <PropertyGroup />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX64'">
     <NXTargetName>Default</NXTargetName>
-    <NXTargetSerialNumber>XJL05100035204</NXTargetSerialNumber>
+    <NXTargetSerialNumber>XJL05100026691</NXTargetSerialNumber>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Release|NX64'">
     <NXTargetSerialNumber>XJL05100028299</NXTargetSerialNumber>

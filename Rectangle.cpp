@@ -16,6 +16,30 @@ void Rectangle::Update()
 {
 }
 
+void Rectangle::SetPosition(float x_, float y_)
+{
+	float xHalf = (x2 - x1) / 2.0f;
+	float yHalf = (y2 + y1) / 2.0f;
+
+	x1 = x_ - xHalf;
+	x2 = x_ + xHalf;
+	y1 = y_ - yHalf;
+	y2 = y_ + yHalf;
+}
+
+void Rectangle::SetSize(float x_, float y_)
+{
+	float xCenter = (x2 + x1) / 2.0f;
+	float yCenter = (y2 + y1) / 2.0f;
+	float xHalf = x_ / 2.0f;
+	float yHalf = y_  / 2.0f;
+
+	x1 = xCenter - xHalf;
+	x2 = xCenter + xHalf;
+	y1 = yCenter - yHalf;
+	y2 = yCenter + yHalf;
+}
+
 bool Rectangle::inRect(float x_, float y_)
 {
 	if (x1 < x_ && x_ < x2
@@ -25,4 +49,13 @@ bool Rectangle::inRect(float x_, float y_)
 	}
 
 	return false;
+}
+
+void Rectangle::RenderInit()
+{
+}
+
+void Rectangle::Render()
+{
+
 }

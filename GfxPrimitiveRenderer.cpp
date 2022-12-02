@@ -144,14 +144,23 @@
 #include <nn/hid/hid_KeyboardKey.h>
 
 #include <nn/settings/settings_DebugPad.h>
+#include <map>
+#include <time.h>       /* time */
 
 // Vibe
 #include "NpadController.h"
 
 #include "Circle.h"
+#include "Rectangle.h"
 #include "Player.h"
 
+
 namespace {
+    
+    
+
+
+    
     ///////////////////////////////////////////////
     // AudioEffect
     ///////////////////////////////////////////////
@@ -1128,6 +1137,529 @@ namespace {
         g_MountRomCacheBuffer = NULL;
     }
 
+
+
+    // Screen size 
+    // 128 
+    // 72
+
+
+    // GAME SECTION
+    enum Scene
+    {
+        LOGO,
+        MAINMENU,
+        GAME,
+        WIN,
+        LOSE
+    };
+
+    Scene currScene = LOGO;
+    bool isGameRunning = true; // for end
+    bool isRunning = true; // for pause
+
+    void LoadScene(Scene nextScene_)
+    {
+        currScene = nextScene_;
+    }
+    void PauseScene(bool pause_)
+    {
+        isRunning = !pause_;
+    }
+
+    
+
+} // namespace End
+
+// GameStates
+
+class GameState
+{
+public:
+    GameState();
+    ~GameState();
+
+    virtual void Init();
+    virtual void Update(float dt_);
+    virtual void  End();
+    void RenderInit();
+    void Render();
+
+    std::vector<Objects*> m_objVector;
+private:
+
+};
+
+GameState::GameState()
+{
+}
+
+GameState::~GameState()
+{
+}
+
+void GameState::Init()
+{
+}
+
+void GameState::Update(float dt_)
+{
+}
+
+void GameState::End()
+{
+}
+
+void GameState::RenderInit()
+{
+    for (auto& obj : m_objVector)
+    {
+        obj->RenderInit();
+    }
+}
+
+void GameState::Render()
+{
+    for (auto& obj : m_objVector)
+    {
+        if (obj->m_visible)
+        {
+            obj->Render();
+        }
+    }
+}
+
+// Logo Scene
+class Logo : public GameState
+{
+public:
+    Logo();
+    ~Logo();
+
+    void Init();
+    void Update(float dt_);
+    void  End();
+
+private:
+    float m_maxTime;
+    float m_time;
+};
+
+Logo::Logo()
+{
+}
+
+Logo::~Logo()
+{
+}
+
+void Logo::Init()
+{
+    m_maxTime = 5.0f;
+    m_time = 0.0f;
+}
+
+void Logo::Update(float dt_)
+{
+    NN_LOG("LOGO UPDATE , %d", m_time);
+
+    m_time += dt_;
+    if (m_maxTime < m_time)
+    {
+        NN_LOG("LOAD MAIN MENU\n");
+        LoadScene(MAINMENU);
+    }
+}
+
+void Logo::End()
+{
+}
+// Main Menu
+class MainMenu : public GameState
+{
+public:
+    MainMenu();
+    ~MainMenu();
+
+    void Init();
+    void Update(float dt_);
+    void  End();
+
+private:
+    Circle* m_cursor;
+    Rectangle* m_startButton;
+    Rectangle* m_endButton;
+};
+
+MainMenu::MainMenu()
+{
+}
+
+MainMenu::~MainMenu()
+{
+}
+
+void MainMenu::Init()
+{
+    m_cursor = new Circle();
+    m_cursor->x = 0.0f;
+    m_cursor->y = 0.0f;
+    m_objVector.push_back(m_cursor);
+
+    m_startButton = new Rectangle();
+    m_startButton->SetPosition(0, 0);
+    m_startButton->SetSize(10.0f, 10.0f);
+    m_objVector.push_back(m_startButton);
+
+    m_endButton = new Rectangle();
+    m_endButton->SetPosition(0, -20.0f);
+    m_endButton->SetSize(10.0f, 10.0f);
+    m_objVector.push_back(m_endButton);
+}
+
+void MainMenu::Update(float /*dt_*/)
+{
+    NN_LOG("MainMenu UPDATE ");
+    // INPUT
+    for (int i = 0; i < NpadIdCountMax; i++)
+    {
+        if (currentNpadJoyDualState[i].buttons.Test<nn::hid::NpadButton::A>())
+        {
+            NN_LOG("Cursor( %f, %f) ", m_cursor->x, m_cursor->y);
+            if (m_startButton->inRect(m_cursor->x, m_cursor->y))
+            {
+                NN_LOG("LOAD GAME");
+                LoadScene(GAME);
+            }
+            else if (m_endButton->inRect(m_cursor->x, m_cursor->y))
+            {
+                NN_LOG("EXIT");
+                isGameRunning = false;
+            }
+        }
+    }
+}
+
+void MainMenu::End()
+{
+    for (auto p : m_objVector)
+    {
+        delete p;
+    }
+    m_objVector.clear();
+}
+
+// Game Scene
+class Bird : public Circle
+{
+public:
+    Bird();
+    ~Bird();
+
+    bool DeadInEnd();
+
+    bool isUpdate;
+    float moveDir;
+private:
+
+};
+
+Bird::Bird()
+{
+    isUpdate = false;
+    moveDir = 1.0f;
+}
+
+Bird::~Bird()
+{
+}
+
+bool Bird::DeadInEnd()
+{
+    if (y > 36.0f)
+    {
+        isUpdate = false;
+        return true;
+    }
+    return false;
+}
+
+
+class GameScene : public GameState
+{
+public:
+    GameScene();
+    ~GameScene();
+
+    void Init();
+    void Update(float dt_);
+    void  End();
+
+private:
+    float m_time;
+    float m_birdTimer;
+    float m_finishTimer;
+
+    int m_bullet;
+    int m_maxBird;
+    int m_birdCounter;
+    int m_killedBird;
+
+    int m_round;
+    int m_maxRound;
+
+    Circle* m_cursor;
+    std::vector<Bird*> m_birds;
+};
+
+GameScene::GameScene()
+{
+}
+
+GameScene::~GameScene()
+{
+}
+
+void GameScene::Init()
+{
+    m_time = 0.0f;
+    m_finishTimer = 0.0f;
+    m_birdTimer = 0.0f;
+
+    m_bullet = 4;
+    m_maxBird = 20;
+    m_birdCounter = 0;
+    m_killedBird = 0;
+
+    m_round = 0;
+    m_maxRound = 0;
+
+    for (int i = 0; i < m_maxBird; ++i)
+    {
+        Bird* bird = new Bird;
+        // Screen size 
+        // 128 
+        // 72
+        bird->x = -64.0f;
+        bird->y = -36.0f;
+        bird->r = 5.0f;
+
+        m_birds.push_back(bird);
+        m_objVector.push_back(bird);
+    }
+
+    m_cursor = new Circle;
+    m_objVector.push_back(m_cursor);
+
+}
+
+void GameScene::Update(float dt_)
+{
+    NN_LOG("GameScene UPDATE , %d", m_time);
+    m_time += dt_;
+
+    // if clicked, shoot bullet
+     // INPUT
+    for (int i = 0; i < NpadIdCountMax; i++)
+    {
+        if (currentNpadJoyDualState[i].buttons.Test<nn::hid::NpadButton::A>())
+        {
+            for (auto& bird : m_birds)
+            {
+                if (bird->isUpdate)
+                {
+                    if (bird->inCircle(m_cursor->x, m_cursor->y))
+                    {
+                        bird->isUpdate = false;
+                        bird->m_visible = false;
+                        m_killedBird++;
+                        m_birdCounter++;
+                        NN_LOG("KILLED BIRD, CURRENT : %d", m_birdCounter);
+                    }
+                }
+            }
+
+        }
+        // Axis
+        float fll = 0x7fff;
+        float stickX = currentNpadJoyDualState[i].analogStickL.x / fll;
+        float stickY = currentNpadJoyDualState[i].analogStickL.y / fll;
+
+        if (stickX != 0.0f && stickY != 0.0f)
+        {
+            m_cursor->Translate(stickX, stickY);
+        }
+    }
+
+    // Bird move
+    int currBirdNum = 0;
+    m_birdTimer += dt_;
+
+    if (m_birdTimer > 10.0f)
+    {
+        int startDir = rand() % 10;
+        if (startDir >= 5)
+        {
+            m_birds[currBirdNum]->x *= -1.0f;
+            m_birds[currBirdNum]->moveDir *= -1.0f;
+        }
+
+        NN_LOG("SPAWN BIRD");
+        m_birds[currBirdNum]->isUpdate = true;
+        m_birdTimer = 0.0f;
+    }
+
+
+    // Screen size 
+    // 128 
+    // 72
+    for (auto& bird : m_birds)
+    {
+        if (bird->isUpdate)
+        {
+            float bdMovDir = dt_ * bird->moveDir;
+            bird->Translate(bdMovDir * 10.0f, bdMovDir * 10.0f);
+            if (bird->DeadInEnd())
+            {
+                m_birdCounter++;
+                NN_LOG("MISSED BIRD, CURRENT : %d", m_birdCounter);
+            }
+        }
+    }
+
+    if (m_birdCounter >= m_maxBird)
+    {
+        m_finishTimer += dt_;
+        if (m_finishTimer > 3.0f)
+        {
+            if (m_killedBird > 10)
+            {
+                NN_LOG("LOAD WIN");
+                LoadScene(WIN);
+            }
+            else
+            {
+                NN_LOG("LOAD LOSE");
+                LoadScene(LOSE);
+            }
+        }
+    }
+}
+
+void GameScene::End()
+{
+    for (auto p : m_objVector)
+    {
+        delete p;
+    }
+    m_objVector.clear();
+}
+
+// WinScreen Scene
+class WinScreen : public GameState
+{
+public:
+    WinScreen();
+    ~WinScreen();
+
+    void Init();
+    void Update(float dt_);
+    void  End();
+
+private:
+    float m_maxTime;
+    float m_time;
+};
+
+WinScreen::WinScreen()
+{
+
+}
+
+WinScreen::~WinScreen()
+{
+}
+
+void WinScreen::Init()
+{
+    m_maxTime = 2.0f;
+    m_time = 0.0f;
+}
+
+void WinScreen::Update(float dt_)
+{
+    m_time += dt_;
+
+    NN_LOG("WinScreen UPDATE , %d", m_time);
+    if (m_maxTime < m_time)
+    {
+        // INPUT
+        for (int i = 0; i < NpadIdCountMax; i++)
+        {
+            if (currentNpadJoyDualState[i].buttons.Test<nn::hid::NpadButton::A>())
+            {
+                NN_LOG("LOAD MENU");
+                LoadScene(MAINMENU);
+            }
+        }
+    }
+}
+
+void WinScreen::End()
+{
+}
+
+// Lose Screen Scene
+class LoseScreen : public GameState
+{
+public:
+    LoseScreen();
+    ~LoseScreen();
+
+    void Init();
+    void Update(float dt_);
+    void  End();
+
+private:
+    float m_maxTime;
+    float m_time;
+};
+
+LoseScreen::LoseScreen()
+{
+}
+
+LoseScreen::~LoseScreen()
+{
+}
+
+void LoseScreen::Init()
+{
+    m_maxTime = 2.0f;
+    m_time = 0.0f;
+}
+
+void LoseScreen::Update(float dt_)
+{
+    NN_LOG("LoseScreen UPDATE , %d", m_time);
+    m_time += dt_;
+
+    if (m_maxTime < m_time)
+    {
+        // INPUT
+        for (int i = 0; i < NpadIdCountMax; i++)
+        {
+            if (currentNpadJoyDualState[i].buttons.Test<nn::hid::NpadButton::A>())
+            {
+                NN_LOG("LOAD MENU");
+                LoadScene(MAINMENU);
+            }
+        }
+    }
+}
+
+void LoseScreen::End()
+{
 }
 
 // Constant buffer structure used by custom shaders.
@@ -2320,7 +2852,7 @@ extern "C" void nnMain()
     Circle cirB(0.0f, 2.0f, 1.0f);
     Circle cirC(0.0f, 3.0f, 1.0f);
 
-    Player playerAim(0.0f, 0.0f);
+    //Player playerAim(0.0f, 0.0f);
     
 
     Init();
@@ -2460,13 +2992,63 @@ extern "C" void nnMain()
     }
     // Vibe End;
 
+    /// <summary>
+    /// GAME SCENE
+    /// </summary>
+    Scene myScene = LOGO;
+    std::vector<GameState*> gameStates;
+    Logo* logoScene = new Logo;
+    MainMenu* mainMenuScene = new MainMenu;
+    GameScene* gameScene = new GameScene;
+    WinScreen* winScene = new WinScreen;
+    LoseScreen* loseScene = new LoseScreen;
 
+    gameStates.push_back(logoScene);
+    gameStates.push_back( mainMenuScene);
+    gameStates.push_back( gameScene);
+    gameStates.push_back( winScene);
+    gameStates.push_back( loseScene);
+    
+
+    for (auto& states : gameStates)
+    {
+        states->Init();
+    }
+
+    float myFrameRate = 0;
     // Draw each frame.
     for (int frame = 0; frame < 600000; ++frame)
     {
+        myFrameRate += 1.0f / 30.0f;
+        NN_LOG("FRAME : %f" , myFrameRate);
+        if (!isGameRunning)
+            break;
+        /*
+        switch (currScene)
+        {
+        case Scene::LOGO:
+            dynamic_cast<Logo>(gameStates[currScene]).Update(frame);
+            gameStates[currScene].Render();
+            break;
+        case Scene::MAINMENU:
+            break;
+        case Scene::GAME:
+            break;
+        case Scene::WIN:
+            break;
+        case Scene::LOSE:
+            break;
+        default:
+            break;
+        }*/
+        
+        gameStates[currScene]->Update(1.0f/30.0f);
+        gameStates[currScene]->Render();
+
         for (int i = 0; i < NpadIdCountMax; i++)
         {
             controllers[i]->Update();
+
             ////////////////////////////////
             // HidNpadSimple
             // /////////////////////////////
@@ -2523,15 +3105,15 @@ extern "C" void nnMain()
                     NN_LOG("Not Collide");
 
             }
-            float fll = 0x7fff;
-            float stickX = currentNpadJoyDualState[i].analogStickL.x / 0x7fff;
-            float stickY = currentNpadJoyDualState[i].analogStickL.y / 0x7fff;
+            //float fll = 0x7fff;
+            //float stickX = currentNpadJoyDualState[i].analogStickL.x / 0x7fff;
+            //float stickY = currentNpadJoyDualState[i].analogStickL.y / 0x7fff;
 
-            if (stickX != 0.0f && stickY != 0.0f)
-            {
-                playerAim.Translate(currentNpadJoyDualState[i].analogStickL.x, currentNpadJoyDualState[i].analogStickL.y);
-                NN_LOG("Stick(%f, %f), Player Pos (%f, %f)\n", stickX / fll, stickY / fll, playerAim.x, playerAim.y);
-            }
+            //if (stickX != 0.0f && stickY != 0.0f)
+            //{
+            //    playerAim.Translate(currentNpadJoyDualState[i].analogStickL.x, currentNpadJoyDualState[i].analogStickL.y);
+            //    NN_LOG("Stick(%f, %f), Player Pos (%f, %f)\n", stickX / fll, stickY / fll, playerAim.x, playerAim.y);
+            //}
 
         }
         // HID Update
@@ -2547,6 +3129,13 @@ extern "C" void nnMain()
         nn::os::SleepThread(nn::TimeSpan::FromMilliSeconds(16));
 
     }
+    for (auto gs : gameStates)
+    {
+        gs->End();
+        delete gs;
+    }
+    gameStates.clear();
+    
     g_Queue.Sync();
 
     // Free the processing meter.
