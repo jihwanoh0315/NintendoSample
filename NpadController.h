@@ -104,6 +104,9 @@ public:
     // Get the current controller style name.
     const char* GetCurrentStyleName() const NN_NOEXCEPT;
 
+    void ShootViberation() NN_NOEXCEPT;
+
+
 private:
     void UpdateNpadState() NN_NOEXCEPT;
     void UpdateButton(const nn::hid::NpadButtonSet& buttons) NN_NOEXCEPT;

@@ -12,4 +12,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_Debug|NX32'">
     <NXTargetName>Default</NXTargetName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='NX_VS2019_Release|Win32'">
+    <NXTargetName>Default</NXTargetName>
+  </PropertyGroup>
 </Project>

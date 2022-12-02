@@ -285,5 +285,10 @@ void NpadController::UpdateVibrationValue() NN_NOEXCEPT
         nn::hid::GetActualVibrationValue(&v.actualVibrationValue, v.deviceHandle);
     }
 }
+void NpadController::ShootViberation() NN_NOEXCEPT
+{
+    UpdateNpadState();
+    UpdateVibrationPattern();
 
+}
 }}

@@ -156,10 +156,8 @@
 
 
 namespace {
-    
-    
-
-
+    // Vibe
+    std::vector<nns::hid::NpadController*> controllers;
     
     ///////////////////////////////////////////////
     // AudioEffect
@@ -1319,21 +1317,22 @@ void MainMenu::Init()
 
 void MainMenu::Update(float /*dt_*/)
 {
-    NN_LOG("MainMenu UPDATE ");
+    NN_LOG("MainMenu UPDATE\n ");
     // INPUT
     for (int i = 0; i < NpadIdCountMax; i++)
     {
         if (currentNpadJoyDualState[i].buttons.Test<nn::hid::NpadButton::A>())
         {
-            NN_LOG("Cursor( %f, %f) ", m_cursor->x, m_cursor->y);
+            NN_LOG("Cursor( %f, %f)\n ", m_cursor->x, m_cursor->y);
             if (m_startButton->inRect(m_cursor->x, m_cursor->y))
             {
-                NN_LOG("LOAD GAME");
+                NN_LOG("LOAD GAME\n");
+                controllers[i]->Update();
                 LoadScene(GAME);
             }
             else if (m_endButton->inRect(m_cursor->x, m_cursor->y))
             {
-                NN_LOG("EXIT");
+                NN_LOG("EXIT\n");
                 isGameRunning = false;
             }
         }
@@ -1399,6 +1398,7 @@ private:
     float m_time;
     float m_birdTimer;
     float m_finishTimer;
+    float m_pressedTime;
 
     int m_bullet;
     int m_maxBird;
@@ -1407,7 +1407,7 @@ private:
 
     int m_round;
     int m_maxRound;
-
+    bool m_shooted;
     Circle* m_cursor;
     std::vector<Bird*> m_birds;
 };
@@ -1425,6 +1425,7 @@ void GameScene::Init()
     m_time = 0.0f;
     m_finishTimer = 0.0f;
     m_birdTimer = 0.0f;
+    m_pressedTime = 0.0f;
 
     m_bullet = 4;
     m_maxBird = 20;
@@ -1433,6 +1434,7 @@ void GameScene::Init()
 
     m_round = 0;
     m_maxRound = 0;
+    m_shooted = false;
 
     for (int i = 0; i < m_maxBird; ++i)
     {
@@ -1457,6 +1459,7 @@ void GameScene::Update(float dt_)
 {
     NN_LOG("GameScene UPDATE , %d", m_time);
     m_time += dt_;
+    
 
     // if clicked, shoot bullet
      // INPUT
@@ -1464,6 +1467,8 @@ void GameScene::Update(float dt_)
     {
         if (currentNpadJoyDualState[i].buttons.Test<nn::hid::NpadButton::A>())
         {
+            m_shooted = true;
+            m_pressedTime = 0.0f;
             for (auto& bird : m_birds)
             {
                 if (bird->isUpdate)
@@ -1474,12 +1479,23 @@ void GameScene::Update(float dt_)
                         bird->m_visible = false;
                         m_killedBird++;
                         m_birdCounter++;
-                        NN_LOG("KILLED BIRD, CURRENT : %d", m_birdCounter);
+                        NN_LOG("KILLED BIRD, CURRENT : %d\n", m_birdCounter);
                     }
                 }
             }
-
         }
+
+        if (m_shooted)
+        {
+            controllers[i]->Update();
+            m_pressedTime += dt_;
+
+            if (m_pressedTime > 0.3f)
+            {
+                m_shooted = false;
+            }
+        }
+
         // Axis
         float fll = 0x7fff;
         float stickX = currentNpadJoyDualState[i].analogStickL.x / fll;
@@ -1599,6 +1615,7 @@ void WinScreen::Update(float dt_)
             if (currentNpadJoyDualState[i].buttons.Test<nn::hid::NpadButton::A>())
             {
                 NN_LOG("LOAD MENU");
+                controllers[i]->Update();
                 LoadScene(MAINMENU);
             }
         }
@@ -1652,6 +1669,7 @@ void LoseScreen::Update(float dt_)
             if (currentNpadJoyDualState[i].buttons.Test<nn::hid::NpadButton::A>())
             {
                 NN_LOG("LOAD MENU");
+                controllers[i]->Update();
                 LoadScene(MAINMENU);
             }
         }
@@ -2975,7 +2993,6 @@ extern "C" void nnMain()
     nn::hid::SetSupportedNpadIdType(npadIds, NN_ARRAY_SIZE(npadIds));
 
     // Add a controller to use.
-    std::vector<nns::hid::NpadController*> controllers;
     for (auto i = 0; i < NN_ARRAY_SIZE(npadIds); i++)
     {
         controllers.push_back(new nns::hid::NpadController(npadIds[i], npadMsg[i]));
@@ -3016,6 +3033,7 @@ extern "C" void nnMain()
     }
 
     float myFrameRate = 0;
+    float prevTime = 0.0f;
     // Draw each frame.
     for (int frame = 0; frame < 600000; ++frame)
     {
@@ -3023,31 +3041,15 @@ extern "C" void nnMain()
         NN_LOG("FRAME : %f" , myFrameRate);
         if (!isGameRunning)
             break;
-        /*
-        switch (currScene)
-        {
-        case Scene::LOGO:
-            dynamic_cast<Logo>(gameStates[currScene]).Update(frame);
-            gameStates[currScene].Render();
-            break;
-        case Scene::MAINMENU:
-            break;
-        case Scene::GAME:
-            break;
-        case Scene::WIN:
-            break;
-        case Scene::LOSE:
-            break;
-        default:
-            break;
-        }*/
+
         
         gameStates[currScene]->Update(1.0f/30.0f);
         gameStates[currScene]->Render();
 
         for (int i = 0; i < NpadIdCountMax; i++)
         {
-            controllers[i]->Update();
+            // Vibration
+            //controllers[i]->Update();
 
             ////////////////////////////////
             // HidNpadSimple
